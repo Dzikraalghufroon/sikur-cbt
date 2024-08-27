@@ -1,0 +1,114 @@
+/* src/index.css */
+
+/* General Styles */
+body {
+  background-color: #f4f4f9; /* Soft background color for better readability */
+  font-family: Arial, sans-serif; /* Consistent font family */
+  color: #333; /* Dark color for text for better contrast */
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Container Styles */
+.container-utama {
+  display: flex;
+  width: 80%;
+  margin: 0 auto; /* Centering the container */
+  padding: 1rem; /* Adding padding for spacing */
+}
+
+.primary {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: #d84c15;
+  color: white; /* Ensure text color is white for visibility */
+  border-radius: 20px;
+  font-size: 16px; /* Set font size for readability */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text horizontally and vertically */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.primary:hover {
+  background-color: #b63502;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.sidenav {
+  position: fixed;
+  /* Add width, height, background, and padding as needed */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure full viewport height */
+  background: #f0f2f5; /* Light background for a clean look */
+  padding: 2rem; /* Add padding to avoid content touching edges */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+  max-width: 400px; /* Limit form width for better layout */
+  width: 100%; /* Ensure form uses full container width */
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 24px; /* Larger font size for the title */
+  color: #333;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.input {
+  margin-bottom: 1rem;
+  padding: 0.75rem; /* Increased padding for better touch targets */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Ensure input takes full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.button {
+  padding: 0.75rem 1.5rem; /* Slightly larger padding for better touch targets */
+  border: none;
+  border-radius: 4px;
+  background: #2c5e91;
+  color: white;
+  font-size: 16px; /* Consistent font size with primary button */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.button:hover {
+  background: #0056b3;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: 14px; /* Set font size for better readability */
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}

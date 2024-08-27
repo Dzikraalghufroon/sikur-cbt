@@ -1,0 +1,227 @@
+.containerUtama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+/* Navbar.module.css */
+.sidenav {
+    background-color: #333;
+    color: white;
+    margin-left: -0.6%;
+    height: 100%;
+    width: 20%;
+    margin-top: -0%;
+    position: fixed;
+}
+
+.sidenav nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.sidenav nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidenav nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    transition: padding-left 0.3s ease;
+}
+.sidenav nav ul li a img{
+    margin-bottom: -10px;
+    width: 40px;
+}
+
+.sidenav nav ul li a:hover {
+    padding-left: 20px;
+}
+
+
+.tambah {
+    margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tambah button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tambah button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 30%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pelajaranTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pelajaranTable th, .pelajaranTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.pelajaranTable th {
+    background-color: #110d0d;
+    color: #fff;
+}
+
+.pelajaranTable tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.aksiButton {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.aksiButton:hover {
+    background-color: #3d464e;
+}
+.aksiButton2 {
+    padding: 8px 16px;
+    background-color: #ffa500;
+    color: #fff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.aksiButton2:hover {
+    background-color: #242a31;
+}
+/* File: setting.module.css */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic container styles */
+  .containerTambah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+    width: 100%;
+  }
+  
+  /* Form styles */
+  .form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 400px;
+  }
+  
+  /* Title styles */
+  .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Label styles */
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Input styles */
+  .input {
+    width: calc(100% - 20px); /* To account for padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button styles */
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  /* Message styles */
+  .message {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .abutton {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: -170px;
+}
+
+.abutton:hover {
+    background-color: #3d4a52;
+}

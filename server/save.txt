@@ -1,0 +1,58 @@
+const expressSession = require("express-session");
+const mysqlStore = require("express-mysql-session")(expressSession);
+const store = new mysqlStore({
+  host: "localhost",
+  port: 3306,
+  createDatabaseTable: true,
+  database: "qomen",
+  user: "root",
+  password: "",
+});
+
+const session = expressSession({
+  secret: "this secret create by podo wwkwkwkw",
+  resave: false,
+  saveUninitialized: true,
+  store: store,
+  cookie: {
+    maxAge: 43200000,
+  },
+});
+
+module.exports = session;
+
+dengan const express = require('express');
+const dotenv = require('dotenv');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const cors = require('cors');
+const cookieParser = require("cookie-parser");
+const multer = require('multer');
+const path = require("path");
+// const db = require('./routes/dataBase')
+
+const app = express();
+
+// Set up Global configuration access
+dotenv.config();
+
+const corsOptions = {
+    origin: 'http://localhost:5173',
+    optionsSuccessStatus: 200,
+    credential: 'include'
+};
+
+app.use(cookieParser());
+app.use(cors(corsOptions));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: true,
+}));
+
+const signin = require('./routes/signin2');
+const { signInUser, signInAdmin } = require('./routes/signin');
+const { authUser, authAdmin } = require('./routes/auth');

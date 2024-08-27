@@ -1,0 +1,134 @@
+/* General Styling */
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+  background-image: url(bg.png);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navLogo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #ff6b6b;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.errorContainer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.errorCode {
+  font-size: 120px;
+  margin: 0;
+  color: #ff6b6b;
+  animation: pulse 2s infinite;
+}
+
+.errorMessage {
+  font-size: 28px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.suggestion {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+  animation: slideIn 1.5s ease-out;
+}
+
+.homeButton {
+  padding: 12px 24px;
+  font-size: 20px;
+  background-color: #ff6b6b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.homeButton:hover {
+  background-color: #ff4c4c;
+  transform: scale(1.1);
+}
+
+.footer {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footerLinks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.footerLinks li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footerLinks li a:hover {
+  color: #ff6b6b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

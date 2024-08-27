@@ -1,0 +1,298 @@
+/* General Styling */
+.pageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #0515fd, #0a6afa, #c3cfe2);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .backgroundOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7));
+    z-index: 0;
+    animation: backgroundShift 10s infinite alternate;
+  }
+  
+  @keyframes backgroundShift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(10px, -10px); }
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+  }
+  
+  .loginImage {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    animation: imageAppear 2s ease-in-out;
+  }
+  
+  @keyframes imageAppear {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  .formContainer {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #78fdf2, #0870f8);
+  }
+  
+  .form {
+    animation: formSlideIn 1.5s ease-in-out;
+  }
+  
+  @keyframes formSlideIn {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    animation: titleGlow 1.5s infinite alternate;
+  }
+  
+  @keyframes titleGlow {
+    0% { text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); }
+    100% { text-shadow: 0px 0px 20px rgba(255, 255, 255, 1); }
+  }
+  
+  .label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .input:focus {
+    border-color: #ff6b6b;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 107, 107, 0.5);
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    animation: messageFadeIn 1s ease-out;
+  }
+  
+  @keyframes messageFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .success {
+    color: #28a745;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  /* Styling untuk wrapper password */
+.passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .passwordWrapper .input {
+    width: calc(100% - 100px); /* Memberi ruang untuk tombol toggle */
+    padding-right: 60px; /* Memberi ruang untuk tombol toggle */
+  }
+  
+  .toggleButton {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: #007bff;
+    font-size: 14px;
+    color: #edf6ff;
+    transition: color 0.3s ease;
+  }
+  
+  .toggleButton:hover {
+    color: #0056b3;
+  }
+  
+  /* Styling tombol Sign In */
+  .button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #e007e0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(255, 107, 107, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(83, 6, 224, 0.3);
+    transition: all 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+  }
+  
+  .button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .button:hover {
+    background-color: #851bdb;
+    transform: translateY(-3px);
+  }
+  
+  .button:active {
+    transform: translateY(2px);
+    background-color: #e64444;
+  }
+  
+  /* Styling tombol Logout */
+  .logout {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logout::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+  }
+  
+  .logout:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .logout:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  .logout:active {
+    transform: translateY(2px);
+    background-color: #004080;
+  }
+  .hide {
+    margin-top: -10px;
+    padding: 20px 20px;
+    font-size: 16px;
+    background-color: #3fff0f;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hide::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+  }
+  
+  .hide:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .hide:hover {
+    background-color: #0056b3;
+  }
+  
+  .hide:active {
+    transform: translateY(2px);
+    background-color: #004080;
+  }
+  
+  @media only screen and (max-width:500px){
+    .imageContainer{
+      width: -10%;
+    }
+    .loginImage{
+      width: -0px;
+    }
+  }

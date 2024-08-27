@@ -1,0 +1,192 @@
+.containerUtama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: -20px;
+    width: 80%;
+}
+.libutton {
+    margin-top: 10px; /* Tambahkan margin top untuk tombol */
+}
+
+.abutton {
+    display: inline-block; /* Membuat tombol menjadi inline block */
+    padding: 10px 60px;
+    /* background-color: #0852dd; */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.abutton:hover {
+    background-color: #3f4b53;
+}
+.kelas{
+    width: 100px;
+    margin-left: -183px;
+    position: fixed;
+    background-color: #2980b9;
+}
+.kelas1{
+    width: 100px;
+    margin-left: -183px;
+    position: fixed;
+    background-color: #29b976;
+}
+.kelas2{
+    width: 100px;
+    margin-left: -183px;
+    position: fixed;
+    background-color: #b96f29;
+}
+.kelas3{
+    width: 100px;
+    margin-left: -183px;
+    position: fixed;
+    background-color: #b92929;
+}
+.kelas4{
+    width: 100px;
+    margin-left: -183px;
+    position: fixed;
+    background-color: #8b29b9;
+}
+
+.sidenav nav ul li a img{
+    margin-bottom: -10px;
+    width: 40px;
+}
+.box {
+    background-color: #50ace9;
+    padding: 20px;
+    border: 2px solid #000; /* Warna dan ketebalan border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: 140px;
+    transition: transform 0.3s ease;
+}
+.box1 {
+    background-color: #58d89c;
+    padding: 20px;
+    border: 2px solid #000; /* Warna dan ketebalan border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: 140px;
+    transition: transform 0.3s ease;
+}
+.box2 {
+    background-color: #d88c46;
+    padding: 20px;
+    border: 2px solid #000; /* Warna dan ketebalan border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: 140px;
+    transition: transform 0.3s ease;
+}
+.box3 {
+    background-color: #f05e5e;
+    padding: 20px;
+    border: 2px solid #000; /* Warna dan ketebalan border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: 140px;
+    transition: transform 0.3s ease;
+}
+.box4 {
+    background-color: #c54bf5;
+    padding: 20px;
+    border: 2px solid #000; /* Warna dan ketebalan border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: 140px;
+    transition: transform 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #666;
+    line-height: 1.6;
+}
+.box1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.box1 h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box1 p {
+    color: #666;
+    line-height: 1.6;
+}
+.box2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.box2 h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box2 p {
+    color: #666;
+    line-height: 1.6;
+}
+.box3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.box3 h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box3 p {
+    color: #666;
+    line-height: 1.6;
+}
+.box4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.box4 h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box4 p {
+    color: #666;
+    line-height: 1.6;
+}
