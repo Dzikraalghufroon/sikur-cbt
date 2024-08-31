@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={Styles.footer}>
       <div className={Styles.container}>
         <div className={Styles.links}>
-        <p>&copy; {new Date().getFullYear()}</p><a href="https://jikupon1.github.io">dzikraalghufroon.github.io</a>
+        <p>&copy; {new Date().getFullYear()}</p><a href="https://dzikraalghufroon.github.io/sikurcbt">dzikraalghufroon.github.io</a>
         </div>
       </div>
     </footer>
