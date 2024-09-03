@@ -75,18 +75,6 @@ const Dashboard = () => {
                 <h5 className={Styles.h5}>Lihat Nilai</h5>
               </article>
             </a>
-            <a onClick={() => navigate('/mainpage')} className={Styles.gridItem}>
-              <article className={Styles.logo}>
-                <img src={Tiga} alt="Tests Icon" />
-                <h5 className={Styles.h5}>Tests</h5>
-              </article>
-            </a>
-            <a onClick={() => navigate('/mainpage')} className={Styles.gridItem}>
-              <article className={Styles.logo}>
-                <img src={Empat} alt="Tests Icon" />
-                <h5 className={Styles.h5}>Tests</h5>
-              </article>
-            </a>
           </div>
           <div className={Styles.container2}>
             <h3 className={Styles.heading2}>Pengumuman</h3>
