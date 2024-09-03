@@ -148,7 +148,7 @@ const Editor = () => {
         const confirmDelete = window.confirm('Apakah Anda yakin ingin menghapus data ini?');
         if (confirmDelete) {
             try {
-                const response = await axios.delete(`${import.meta.env.VITE_SERVER}/modul-hapus-soal/${id}`);
+                const response = await axios.delete(`${import.meta.env.VITE_SERVER}/modul-delete-soal/${id}`);
                 if (response.status === 200) {
                     setujianList(ujianList.filter(siswa => siswa.id !== id));
                 } else {
