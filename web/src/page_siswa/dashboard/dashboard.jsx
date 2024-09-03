@@ -104,7 +104,7 @@ const Dashboard = () => {
             handleClose={toggleModal}
             title="HALO SELAMAT DATANG"
           >
-            <p>ASU!</p>
+            <p></p>
           </Modal>
         </div>
       </section>
